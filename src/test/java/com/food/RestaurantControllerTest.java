@@ -60,7 +60,7 @@ public class RestaurantControllerTest {
     public void shouldAbleToAccessRestaurantByIndex() {
         whenConditionForRestaurantRepoCall();
 
-        Restaurant actualResult = restaurantController.getRestaurantByIndex(0);
+        Restaurant actualResult = restaurantController.getMenuOfRestaurantByIndex(0);
         verify(restaurantServiceInterface).getRestaurantMenuByIndex(0);
         Assert.assertEquals("BBQ",actualResult.getName());
     }
@@ -69,7 +69,7 @@ public class RestaurantControllerTest {
     public void userShouldBeAbleToSeeSelectedRestaurantMenu() {
         whenConditionForRestaurantRepoCall();
 
-        Restaurant actualResult = restaurantController.getRestaurantByIndex(0);
+        Restaurant actualResult = restaurantController.getMenuOfRestaurantByIndex(0);
         Item firstItem = actualResult.getItems().get(0);
         Assert.assertEquals("Goat curry",firstItem.getDish());
         Assert.assertEquals(543.50,firstItem.getPrice(),.50);
@@ -93,7 +93,7 @@ public class RestaurantControllerTest {
 
     private void getRestaurantByIndex(int index) {
         when(restaurantServiceInterface.getAllRestaurant()).thenReturn(createRestaurantList());
-        restaurantController.getRestaurantByIndex(index);
+        restaurantController.getMenuOfRestaurantByIndex(index);
     }
 
     private List<String> createRestaurantList() {

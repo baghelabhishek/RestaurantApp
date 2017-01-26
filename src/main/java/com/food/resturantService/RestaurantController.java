@@ -20,7 +20,7 @@ public class RestaurantController {
         return allRestaurant;
     }
 
-    public Restaurant getRestaurantByIndex(int index) {
+    public Restaurant getMenuOfRestaurantByIndex(int index) {
         List<String> allRestaurant = restaurantServiceInterface.getAllRestaurant();
         if (indexIsLessSizeOfListOrGreaterThanZero(index, allRestaurant))
             throw new IllegalArgumentException();
