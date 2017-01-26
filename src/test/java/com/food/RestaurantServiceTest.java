@@ -1,4 +1,7 @@
 package com.food;
+import com.food.resturantService.Restaurant;
+import com.food.resturantService.RestaurantRepo;
+import com.food.resturantService.RestaurantService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

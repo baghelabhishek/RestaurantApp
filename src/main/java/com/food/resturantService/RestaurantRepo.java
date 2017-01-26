@@ -1,4 +1,4 @@
-package com.food;
+package com.food.resturantService;
 
 import java.util.ArrayList;
 import java.util.List;
