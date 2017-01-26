@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by ab06083 on 1/9/2017.
  */
-public class RestaurantRepo  {
+public class RestaurantRepo implements RestaurantRepoInterface {
 
     public List<String> getAllRestaurantByName() {
 

@@ -7,9 +7,9 @@ import java.util.List;
  */
 public class RestaurantService implements RestaurantServiceInterface {
 
-    private RestaurantRepo restaurantRepo;
+    private RestaurantRepoInterface restaurantRepo;
 
-    public RestaurantService(RestaurantRepo restaurantRepo) {
+    public RestaurantService(RestaurantRepoInterface restaurantRepo) {
         this.restaurantRepo = restaurantRepo;
     }
 
