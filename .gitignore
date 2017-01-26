@@ -1,0 +1,17 @@
+.git
+.hg
+*.ids
+*.iml
+*.ipr
+*.iws
+*.orig
+*.patch
+.idea/
+.m2/*
+#eclipse artifacts
+.checkstyle
+.classpath
+.metadata
+.project
+.settings
+/target
